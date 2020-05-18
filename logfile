@@ -1,0 +1,28 @@
+5516616 (HEAD -> master, origin/master, origin/HEAD) last one
+3a07b02 modifiled file
+dfa41bb modifiled
+28949ff sample
+e6ee397  delete commit
+409c23e  first commit
+a341cd0 Initial commit
+[root@RHEL8 devops2]# git show 5516616
+commit 5516616b22ea14773f39abf228e0cfd087efe230 (HEAD -> master, origin/master, origin/HEAD)
+Merge: 3a07b02 dfa41bb
+Author: srinu <gsrinu.la@gmail.com>
+Date:   Mon May 18 16:59:47 2020 +0530
+
+    last one
+
+diff --cc sample
+index f56ad06,c2e45ea..54a351d
+--- a/sample
++++ b/sample
+@@@ -1,2 -1,1 +1,6 @@@
+++<<<<<<< HEAD
+ +Devops class started
+ +repository created
+++=======
++ Devops class started
+++>>>>>>> dfa41bb59e666c345945ed1774e56b77857b0f02
+[root@RHEL8 devops2]#
+
